@@ -1,0 +1,95 @@
+.ideas-single {
+  padding: 170px 0;
+
+  @media (max-width: 768px) {
+    padding: 170px 0 70px;
+  }
+
+  &__container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  &__head {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__category {
+    font: 24px/1.2 'Rubik', sans-serif; font-weight: 500;
+    color: rgba(#5cf3ec, .3);
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font: 44px/1.2 'Rubik', sans-serif; font-weight: 500;
+    letter-spacing: .5px;
+    color: #fff;
+    margin-bottom: 11px;
+  }
+
+  &__subtitle {
+    font: 18px/1.2 'Rubik', sans-serif; font-weight: 500;
+    color: rgba(255,255,255, .3);
+  }
+
+  &__text {
+    font: 14px/2 'Rubik', sans-serif; font-weight: 400;
+    color: #c3c9e0;
+    letter-spacing: .25px;
+
+    a {
+      color: #5cf3ec;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__item-title {
+    font: 22px/30px 'Rubik', sans-serif; font-weight: 400;
+    color: #5cf3ec;
+    margin-bottom: 12px;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__nav {
+    text-align: right;
+
+    a {
+      display: block;
+      margin-bottom: 10px;
+      font: 15px/1.2 'Rubik', sans-serif; font-weight: 400;
+      color: #9fa4ba;
+      text-decoration: none;
+    }
+  }
+
+  &__nav-title {
+    font: 18px/1 'Rubik', sans-serif; font-weight: 400;
+    color: #5cf3ec;
+    letter-spacing: .5px;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,14 @@
+.text-section {
+  position: relative;
+  z-index: 10000;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #fff;
+  font: 24px/1.3 'IBMPlexSans', sans-serif;
+  padding: 50px 20px 70px;
+
+  &--game-out {
+    color: #604fe6;
+    font-weight: 300;
+  }
+}

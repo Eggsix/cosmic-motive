@@ -1,0 +1,130 @@
+.slider-mobile {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  &__bg {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  &__bg-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__bg-item {
+    max-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 210px;
+  }
+
+  &__projects {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 110px;
+    padding: 0 30px;
+    color: #fff;
+    font: 14px/1.2 'Rubik', sans-serif; font-weight: 500;
+  }
+
+  &__project-index {
+    position: relative;
+    padding-right: 35px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 23px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 1px;
+      background-color: #fff;
+    }
+  }
+
+  &__project-name {
+    opacity: 0;
+    position: absolute;
+  }
+
+  &__item {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  &__title {
+    color: #fff;
+    font: 44px/1.2 'Lora', sans-serif;
+    margin-bottom: 18px;
+
+    @media (max-width: 576px) {
+      font-size: 34px;
+    }
+  }
+
+  &__subtitle {
+    font: 15px/1.6 'Rubik', sans-serif; font-weight: 300;
+    color: #c0c8e7;
+  }
+
+  &__grid {
+    display: flex;
+  }
+
+  &__arrows {
+    position: absolute;
+    right: 22px;
+    bottom: 33px;
+    display: grid;
+    grid-row-gap: 11px;
+    transition: all .5s;
+  }
+
+  &__arrow {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 50%;
+      height: auto;
+    }
+
+    &--prev {
+      transform: rotate(-180deg);
+    }
+  }
+}

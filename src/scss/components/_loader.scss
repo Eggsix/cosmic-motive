@@ -1,0 +1,75 @@
+.loader {
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  background-image: linear-gradient(169deg, #070e3c, #070617 39%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__fixed {
+
+  }
+
+  &__container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  svg {
+    margin-bottom: 30px;
+  }
+
+  .nav__logo--text {
+    margin-bottom: 36px;
+  }
+
+  &__percentage {
+    display: block;
+    font: 24px/1 'Rubik', sans-serif; font-weight: 300;
+    color: rgba(255,255,255, .7);
+    text-align: center;
+    margin-bottom: 13px;
+  }
+
+  &__bar-bg {
+    position: relative;
+    width: 320px;
+    height: 8px;
+    background: #1f2131;
+    border-radius: 9px;
+    overflow: hidden;
+  }
+
+  &__bar {
+    position: absolute;
+    border-radius: 9px;
+    transition: all .1s;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #5cf3ec;
+    width: 0;
+  }
+
+  &__bg-container {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #5CF3EC;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
