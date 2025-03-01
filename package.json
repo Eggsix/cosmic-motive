@@ -21,13 +21,16 @@
     "redux": "^4.1.2",
     "sass": "^1.49.9",
     "web-vitals": "^2.1.4",
+    "wrangler": "^3.109.3",
     "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "preview:worker": "npm run build && wrangler dev",
+    "deploy:worker": "npm run build && wrangler deploy"
   },
   "eslintConfig": {
     "extends": [
