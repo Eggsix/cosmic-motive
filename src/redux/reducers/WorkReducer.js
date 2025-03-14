@@ -323,7 +323,7 @@ const initialState = {
       title: "Investors",
       description: "Mobile iOS and Desktop Production Design",
       img: "/img/works/investors/investors.png",
-      homeImgUrl: "/img/works/investors/investors.png",
+      homeImgUrl: "/img/works/investors/investors_bg.png",
       homeImgUrlMobile: "/img/works/investors/investors.png",
       url: "/selected-work/investors",
       //   pageTitle:
@@ -367,9 +367,8 @@ const initialState = {
             type: pageBlockTypes.TitleAndLogo,
             title: "MarketSmith",
             subtitle: "BY INVESTOR'S BUSINESS DAILY",
-            logo: "/img/customers/market-smith.svg",
-            background:
-              "radial-gradient(circle at 50% 0, #7b8d9a, #1d2935 39%, #141d25 97%)",
+            logo: "/img/customers/market-smith-logo.svg",
+            className: "h2--thank-you",
           },
           {
             type: pageBlockTypes.textWithBg,

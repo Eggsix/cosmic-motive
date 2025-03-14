@@ -19,6 +19,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import { useEffect, useRef } from "react";
 import { useLocation } from "react-router-dom";
 import { mobileViewOn, mobileViewOff } from "./redux/actions";
+import Investors from "./components/Investors/Investors";
 
 const mapStateToProps = (state) => {
   return {
@@ -86,6 +87,7 @@ function App(props) {
                 path="/selected-work/:routePath"
                 element={<SelectedWorkPage />}
               />
+              <Route path="/selected-work/investors" element={<Investors />} />
               <Route path="/agency" element={<Agency />} />
               <Route path="/contact" element={<Contact />} />
               <Route path="/ideas" element={<Ideas />} />
